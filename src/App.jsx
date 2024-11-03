@@ -7,14 +7,14 @@ import './App.css'
 function App() {
   
   return (
-    <>
-      <div className='center-align default-styles my-16'>
-        <div className='container center-align hero-section default-styles small:max-w-small medium:max-w-medium large:max-w-large'>
+    <div className='default-styles'>
+      <div className='center-align py-4'>
+        <div className='container center-align hero-section small:max-w-small medium:max-w-medium large:max-w-large'>
           <LeftSection />
           <HomeSection />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

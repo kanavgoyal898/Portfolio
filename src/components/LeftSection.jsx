@@ -12,7 +12,7 @@ const items = [
 
 function LeftSection(props) {
     return (
-        <aside className='bg-red-100 dark:bg-blue-100 navigation-section'>
+        <aside className='navigation-section'>
             <Header homeURL='/goyal/' name='Kanav Goyal' universityName='NIT Jalandhar' universityURL='https://www.nitj.ac.in' />
             <Socials mail='kanavgoyal898@gmail.com' />
             <NavigationBar items={items}/>

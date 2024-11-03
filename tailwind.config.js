@@ -41,6 +41,18 @@ export default {
         '4xl': '2.25rem',     // 36px
         '5xl': '3rem',        // 48px
       },
+      colors: {
+        'darkPrimary': 'rgb(33, 37, 41)',
+        'lightPrimary': 'rgb(255, 255, 255)',
+        'darkSecondary': 'rgb(222, 226, 230)',
+        'lightSecondary': 'rgb(33, 37, 41)',
+        'darkTertiary': 'rgb(239, 154, 164)',
+        'lightTertiary': 'rgb(165, 28, 48)',
+        'darkQuaternary': 'rgb(222, 226, 230)',
+        'lightQuaternary': 'rgb(33, 37, 41)',
+        'darkQuaternaryO': 'rgba(222, 226, 230, 0.75)',
+        'lightQuaternaryO': 'rgba(33, 37, 41, 0.75)'
+      },
     },
   },
   plugins: [],

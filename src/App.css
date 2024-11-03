@@ -4,12 +4,16 @@
 
 .hero-section {
     margin: 0 0;
-    padding: 0 calc(0.025 * 100vw);
+    /* padding: calc(0.025 * 100vw) 0; */
     box-sizing: border-box;
 }
 
 .default-styles {
-    @apply font-Roboto font-normal;
+    @apply font-Roboto font-normal bg-lightPrimary dark:bg-darkPrimary text-darkPrimary dark:text-lightPrimary;
+}
+
+.name {
+    @apply text-3xl text-lightTertiary dark:text-darkTertiary font-bold;
 }
 
 .navigation-section {
