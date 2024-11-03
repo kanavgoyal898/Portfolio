@@ -1,20 +1,29 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faDiscord, faGithub, faInstagram, faLinkedinIn, faSnapchat, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faKeyboard } from '@fortawesome/free-solid-svg-icons'
 
 const icons = [
     {
-        icon: faEnvelope,
-        link: 'mailto:kanavgoyal898@gmail.com',
+        icon: faGithub,
+        link: 'https://github.com/kanavgoyal898',
     },
     {
-        icon: faEnvelope,
-        link: 'mailto:kanavgoyal898@gmail.com',
+        icon: faInstagram,
+        link: 'https://www.instagram.com/_kanav_6868/',
     },
     {
-        icon: faEnvelope,
-        link: 'mailto:kanavgoyal898@gmail.com',
+        icon: faLinkedinIn,
+        link: 'https://in.linkedin.com/in/kanavgoyal898',
+    },
+    {
+        icon: faSnapchat,
+        link: 'https://snapchat.com/t/MR76SJfX',
+    },
+    {
+        icon: faXTwitter,
+        link: 'https://x.com/kanavgoyal898',
     },
 ]
 
@@ -22,15 +31,19 @@ function Socials() {
     return (
         <div className='action-center-section'>
             <h3>
-                <a href='mailto:kanavgoyal898@gmail.com'>
-                    kanavgoyal898@gmail.com
+                <a href='mailto:kanavgoyal898@gmail.com' className='hover:underline'>
+                    <h2>
+                        kanavgoyal898@gmail.com
+                    </h2>
                 </a>
             </h3>
             <div className='icon-list'>
                 {icons.map((icon, index) => {
                     return (
-                        <a key={index} href={icon.link}>
-                            <FontAwesomeIcon icon={icon.icon}></FontAwesomeIcon>
+                        <a key={index} href={icon.link} target='_blank'>
+                            <h2>
+                                <FontAwesomeIcon icon={icon.icon}></FontAwesomeIcon>
+                            </h2>
                         </a>
                     )
                 })}

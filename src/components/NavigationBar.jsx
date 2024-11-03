@@ -7,15 +7,31 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const items = [
     {
         url: '/goyal/',
-        title: 'Home',
+        title: 'Bio',
     },
     {
         url: '/goyal/',
-        title: 'Home',
+        title: 'Skills',
     },
     {
         url: '/goyal/',
-        title: 'Home',
+        title: 'Projects',
+    },
+    {
+        url: '/goyal/',
+        title: 'Education',
+    },
+    {
+        url: '/goyal/',
+        title: 'Experience',
+    },
+    {
+        url: '/goyal/',
+        title: 'Publications',
+    },
+    {
+        url: '/goyal/',
+        title: 'Extra-curriculars',
     },
 ]
 
@@ -25,7 +41,9 @@ function Header() {
     return (
         <div className='action-center-section'>
             <button onClick={()=>setCollapsed(!collapsed)} className='burger-button'>
+                <h2>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                </h2>
             </button>
             <ul className={`action-center-nav ${collapsed?'hidden':'flex'}`} >
                 {items.map((item, index)=> {

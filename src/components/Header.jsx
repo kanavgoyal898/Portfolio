@@ -1,23 +1,27 @@
 import React from 'react'
 
 function Header() {
-    return (
-        <div className='action-center-section'>
-            <h3>
-              <a href='/goyal/'>homepage</a> of
-            </h3>
-            <h1 class='name'>
-              Kanav Goyal
-            </h1>
-            <h2>
-              <p>Undergraduate Student</p>
-              <p>Practice of Computer Science</p>
-            </h2>
-            <h3>
-              NIT Jalandhar
-            </h3>
-        </div>
-    )
+  return (
+    <div className='action-center-section'>
+      <h2 class='name text-quaternaryLight dark:text-quaternaryDark'>
+        <a href='/goyal/'>home page</a> of
+      </h2>
+      <h1 class='name'>
+        <a href='/goyal/'>
+          Kanav Goyal
+        </a>
+      </h1>
+      <h2 class='name designation'>
+        <p>Undergraduate Software Developer</p>
+        <p>Computer Science and Engineering</p>
+      </h2>
+      <h2>
+        <a href="https://www.nitj.ac.in" target="_blank">
+          NIT Jalandhar
+        </a>
+      </h2>
+    </div>
+  )
 }
 
 export default Header

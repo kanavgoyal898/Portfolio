@@ -11,7 +11,7 @@ import './App.css'
 function App() {
   
   return (
-    <div className='page'>
+    <div>
       <div className='content bg-transparent'>
         <div className='container action-center bg-transparent'>
           <Header />
@@ -20,7 +20,7 @@ function App() {
         </div>
         <div className='container results-center bg-transparent'>
           <Image />
-          <Timestamps />
+          {/* <Timestamps /> */}
         </div>
       </div>
     </div>

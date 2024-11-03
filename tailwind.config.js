@@ -6,6 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      padding: {
+        'globalVerticalPadding': '52.5px',
+        'globalVerticalPaddingMobile': '31.5px',
+      },
+      margin: {
+        'actionHorizontalMargin': '3.5px',
+      },
+      lineHeight: {
+        '1.2': '1.2',
+      },
       colors: {
         primaryDark: 'rgb(33, 37, 41)',
         secondaryDark: 'rgb(222, 226, 230)',
@@ -18,6 +28,12 @@ export default {
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        tiny: '13.125px',
+        small: '15.75px',
+        regular: '21px',
+        large: '31.5px',
       },
       width: {
         'large': '1200px',

@@ -22,7 +22,7 @@ function Timestamps() {
                 {timestamps.map((timestamp, index) => {
                     return (
                         <li key={index} className='timeline-card bg-transparent'>
-                            <h3>{timestamp.title}</h3>
+                            <p class='font-bold'>{timestamp.title}</p>
                             <p>{timestamp.description}</p>
                         </li>
                     )
