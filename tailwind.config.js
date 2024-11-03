@@ -6,7 +6,18 @@ export default {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        'large': '1200px',
+        'medium': '992px',
+        'regular': '768px',
+        'small': '576px'
+      },
+      maxWidth: {
+        'large': '1200px',
+        'medium': '992px',
+        'regular': '768px',
+        'small': '576px'
+      },
     },
   },
   plugins: [],

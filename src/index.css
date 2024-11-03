@@ -3,3 +3,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    @apply flex;
+    @apply w-full h-full;
+}
+
+.page {
+    @apply flex justify-center;
+    @apply max-w-none max-h-none;
+    @apply mx-2 md:mx-0 my-2 md:my-0 px-0 py-8;
+}
+
+.content {
+    @apply pb-8 regular:px-4;
+    @apply container flex-col gap-2 regular:flex-row regular:gap-4;
+    @apply regular:max-w-regular medium:max-w-medium large:max-w-large;
+}
+
+.action-center {
+    @apply regular:me-4;
+    @apply flex-col text-center regular:flex-[2] regular:text-right;
+}
+
+.results-center {
+    @apply regular:ms-16;
+    @apply flex-col text-center regular:flex-[3] regular:text-left;
+}
