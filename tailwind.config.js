@@ -6,6 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primaryDark: 'rgb(33, 37, 41)',
+        secondaryDark: 'rgb(222, 226, 230)',
+        tertiaryDark: 'rgb(239, 154, 164)',
+        quaternaryDark: 'rgba(222, 226, 230, 0.75)',
+        primaryLight: 'rgb(255, 255, 255)',
+        secondaryLight: 'rgb(33, 37, 41)',
+        tertiaryLight: 'rgb(165, 28, 48)',
+        quaternaryLight: 'rgba(33, 37, 41, 0.75)',
+      },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },

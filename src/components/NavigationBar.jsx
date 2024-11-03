@@ -24,7 +24,7 @@ function Header() {
 
     return (
         <div className='action-center-section'>
-            <button onClick={()=>setCollapsed(!collapsed)} className='flex m-auto regular:hidden'>
+            <button onClick={()=>setCollapsed(!collapsed)} className='burger-button'>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
             </button>
             <ul className={`action-center-nav ${collapsed?'hidden':'flex'}`} >

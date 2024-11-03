@@ -17,11 +17,11 @@ const timestamps = [
 
 function Timestamps() {
     return (
-        <div className='timeline-cards bg-pink-100'>
+        <div className='timeline-cards bg-transparent'>
             <ul>
                 {timestamps.map((timestamp, index) => {
                     return (
-                        <li key={index} className='timeline-card bg-sky-100'>
+                        <li key={index} className='timeline-card bg-transparent'>
                             <h3>{timestamp.title}</h3>
                             <p>{timestamp.description}</p>
                         </li>

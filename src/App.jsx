@@ -12,13 +12,13 @@ function App() {
   
   return (
     <div className='page'>
-      <div className='content bg-red-200'>
-        <div className='container action-center bg-blue-200'>
+      <div className='content bg-transparent'>
+        <div className='container action-center bg-transparent'>
           <Header />
           <Socials />
           <NavigationBar />
         </div>
-        <div className='container results-center bg-green-200'>
+        <div className='container results-center bg-transparent'>
           <Image />
           <Timestamps />
         </div>
