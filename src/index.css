@@ -27,6 +27,39 @@
 }
 
 .results-center {
-    @apply regular:ms-16;
-    @apply flex-col text-center regular:flex-[3] regular:text-left;
+    @apply regular:ms-8;
+    @apply flex-col text-left regular:flex-[3] regular:text-left;
+}
+
+.action-center-section {
+    @apply mb-2 regular:mb-4;  
+}
+
+.icon-list {
+    @apply flex flex-row flex-wrap gap-1;
+    @apply justify-center regular:justify-end;
+}
+
+.action-center-nav {
+    @apply regular:flex;
+    @apply flex-col justify-end;
+}
+
+.result-figure {
+    @apply flex flex-col text-right;
+
+}
+
+.result-image {
+    @apply w-small regular:w-regular medium:w-medium large:w-large;
+}
+
+.timeline-cards {
+    @apply container px-2 py-4;
+    @apply flex-col text-left;
+}
+
+.timeline-card {
+    @apply container px-0 py-0;
+    @apply flex-col text-left;
 }
