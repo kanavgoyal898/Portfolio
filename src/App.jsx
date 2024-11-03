@@ -8,8 +8,8 @@ function App() {
   
   return (
     <div className='default-styles'>
-      <div className='center-align py-4'>
-        <div className='container center-align hero-section small:max-w-small medium:max-w-medium large:max-w-large'>
+      <div className='center-align'>
+        <div className='container center-align dynamic-menu hero-section small:max-w-small medium:max-w-medium large:max-w-large'>
           <LeftSection />
           <HomeSection />
         </div>
