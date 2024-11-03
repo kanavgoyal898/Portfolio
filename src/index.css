@@ -13,6 +13,8 @@
     @apply flex justify-center;
     @apply max-w-none max-h-none;
     @apply mx-2 md:mx-0 my-2 md:my-0 px-0 py-8;
+
+    @apply font-sans text-base;
 }
 
 .content {
@@ -35,7 +37,12 @@
     @apply mb-2 regular:mb-4;  
 }
 
+.name {
+    @apply my-2;
+}
+
 .icon-list {
+    @apply text-2xl;
     @apply flex flex-row flex-wrap gap-1;
     @apply justify-center regular:justify-end;
 }
@@ -45,9 +52,12 @@
     @apply flex-col justify-end;
 }
 
+.action-center-nav-item {
+    @apply text-xl font-medium;
+}
+
 .result-figure {
     @apply flex flex-col text-right;
-
 }
 
 .result-image {
@@ -62,4 +72,16 @@
 .timeline-card {
     @apply container px-0 py-0;
     @apply flex-col text-left;
+}
+
+h1 {
+    @apply text-3xl font-bold;
+}
+
+h2 {
+    @apply text-2xl font-semibold;
+}
+
+h3 {
+    @apply text-xl font-medium;
 }

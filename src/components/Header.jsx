@@ -6,16 +6,16 @@ function Header() {
             <h3>
               <a href='/goyal/'>homepage</a> of
             </h3>
-            <h1>
+            <h1 class='name'>
               Kanav Goyal
             </h1>
             <h2>
               <p>Undergraduate Student</p>
               <p>Practice of Computer Science</p>
             </h2>
-            <h2>
+            <h3>
               NIT Jalandhar
-            </h2>
+            </h3>
         </div>
     )
 }

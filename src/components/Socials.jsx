@@ -21,9 +21,11 @@ const icons = [
 function Socials() {
     return (
         <div className='action-center-section'>
-            <a href='mailto:kanavgoyal898@gmail.com'>
-                kanavgoyal898@gmail.com
-            </a>
+            <h3>
+                <a href='mailto:kanavgoyal898@gmail.com'>
+                    kanavgoyal898@gmail.com
+                </a>
+            </h3>
             <div className='icon-list'>
                 {icons.map((icon, index) => {
                     return (

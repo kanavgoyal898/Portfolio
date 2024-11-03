@@ -30,7 +30,7 @@ function Header() {
             <ul className={`action-center-nav ${collapsed?'hidden':'flex'}`} >
                 {items.map((item, index)=> {
                     return (
-                        <li key={index}>
+                        <li key={index} className='action-center-nav-item'>
                             <a href={item.url}>
                                 {item.title}
                             </a>
