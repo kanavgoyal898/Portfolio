@@ -2,11 +2,11 @@ import React from 'react'
 
 function Figure(props) {
     return (
-        <figure>
-              <a href={props.src} className='flex flex-col text-right w-5/6'>
+        <figure className='vertical-list'>
+              <a href={props.src}>
                 <img src={props.src} alt={props.caption}/>
-                <figcaption className='py-2 text-right'>{props.caption}</figcaption>
               </a>
+              <figcaption className='mt-2 mb-8 text-sm text-right'>{props.caption}</figcaption>
         </figure>
     )
 }

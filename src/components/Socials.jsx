@@ -12,7 +12,7 @@ const socialIcons = [
 
 function Socials(props) {
     return (
-        <div className='py-6'>
+        <div className='nav-section'>
             <h3>
                 <a href={"mailto:" + props.mail}>{props.mail}</a>
             </h3>

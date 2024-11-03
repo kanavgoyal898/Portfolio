@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function SocialIcons(props) {
     return (
-        <p className='flex gap-2 justify-end'>
+        <p className='social-icons'>
             {props.socialIcons.map((icon, index) => (
-                <a key={index} href={icon.url}>
+                <a key={index} href={icon.url} className='mx-1'>
                     {<FontAwesomeIcon icon={icon.icon} />}
                 </a>
             ))}

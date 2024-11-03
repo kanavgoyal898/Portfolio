@@ -10,7 +10,7 @@ const timestamps = [
 
 function Timeline() {
     return (
-        <dl>
+        <dl className='vertical-list'>
             {timestamps.map((timestamp, index) => (
                 <TimestampCard key={index} month={timestamp.month} year={timestamp.year} description={timestamp.description}/>
             ))}

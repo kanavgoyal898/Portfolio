@@ -2,15 +2,15 @@ import React from 'react'
 
 function Header(props) {
     return (
-        <>
-            <h2 className='text-xl'>
+        <div className='nav-section'>
+            <h2>
                 <a href={props.homeURL}>home page</a>
                 <span> of</span>
             </h2>
-            <h1 className='text-3xl font-bold'>
+            <h1 className='my-1 text-3xl font-bold'>
                 {props.name}
             </h1>
-            <h2 className='text-2xl'>
+            <h2>
                 Undergraduate Student
                 <br />
                 Practice of Computer Science
@@ -18,7 +18,7 @@ function Header(props) {
             <h3>
                 <a href={props.universityURL}>{props.universityName}</a>
             </h3>
-        </>
+        </div>
     )
 }
 

@@ -1,0 +1,33 @@
+.center-align {
+    @apply flex flex-row justify-center;
+}
+
+.hero-section {
+    margin: 0 0;
+    padding: 0 calc(0.025 * 100vw);
+    box-sizing: border-box;
+}
+
+.default-styles {
+    @apply font-Roboto font-normal;
+}
+
+.navigation-section {
+    @apply hidden md:block md:flex-[2] md:flex-col md:text-right md:text-xl md:ps-4 md:pe-12;
+}
+
+.home-section {
+    @apply flex-[3] flex-col text-left text-base px-4;
+}
+
+.nav-section {
+    @apply container flex flex-col my-8;
+}
+
+.social-icons {
+    @apply container flex flex-row justify-end;
+}
+
+.vertical-list {
+    @apply container flex flex-col justify-end;
+}
