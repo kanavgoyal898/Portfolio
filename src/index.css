@@ -3,3 +3,118 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    @apply flex;
+    @apply w-full h-full;
+}
+
+body {
+    @apply flex justify-center;
+    @apply max-w-none max-h-none;
+    @apply px-2 pt-globalVerticalPaddingMobile regular:pt-globalVerticalPadding;
+
+    @apply font-sans text-tiny leading-1.2;
+    @apply bg-primaryLight dark:bg-primaryDark;
+}
+
+.content {
+    @apply pb-8 regular:px-4;
+    @apply container flex-col gap-2 regular:flex-row regular:gap-16 large:gap-12;
+    @apply regular:max-w-regular medium:max-w-medium large:max-w-large;
+}
+
+.action-center {
+    /* @apply regular:me-actionHorizontalMargin; */
+    @apply flex-col text-center regular:flex-[2] regular:text-right;
+}
+
+.results-center {
+    @apply regular:ms-8;
+    @apply flex-col text-left regular:flex-[3] regular:text-left;
+}
+
+.action-center-section {
+    margin-bottom: 31.5px; 
+}
+
+.icon-list {
+    @apply text-regular;
+    @apply flex flex-row flex-wrap mt-1 gap-1.5;
+    @apply justify-center regular:justify-end;
+    @apply text-tertiaryLight dark:text-tertiaryDark
+}
+
+.burger-button {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    @apply flex mx-auto mb-2 px-4 py-1.5 regular:hidden;
+    @apply text-tertiaryLight dark:text-tertiaryDark;
+    @apply border-quaternaryLight dark:border-quaternaryDark rounded-md;
+}
+
+.action-center-nav {
+    @apply regular:flex;
+    @apply flex-col justify-end;
+    @apply text-tertiaryLight dark:text-tertiaryDark;
+}
+
+.action-center-nav-item {
+    line-height: 1.5;
+    @apply text-regular font-normal;
+}
+
+.result-figure {
+    @apply flex flex-col text-right;
+}
+
+.result-image {
+    @apply w-small regular:w-regular medium:w-medium large:w-large;
+}
+
+.caption {
+    @apply py-4;
+    @apply text-tertiaryLight dark:text-tertiaryDark;
+}
+
+.timeline-cards {
+    @apply container px-2 py-4;
+    @apply flex-col text-left;
+}
+
+.timeline-card {
+    @apply container px-0 py-2;
+    @apply flex-col text-left text-small;
+    @apply text-secondaryLight dark:text-secondaryDark
+}
+
+h1 {
+    @apply text-large font-bold;
+    @apply text-tertiaryLight dark:text-tertiaryDark
+}
+
+h2 {
+    @apply text-regular font-normal;
+    @apply text-tertiaryLight dark:text-tertiaryDark;
+}
+
+* a {
+    @apply text-tertiaryLight dark:text-tertiaryDark;
+}
+
+* a:hover {
+    @apply underline;
+}
+
+.name {
+    margin-bottom: 5.25px;
+}
+
+.designation {
+    @apply text-regular font-normal;
+    @apply text-secondaryLight dark:text-secondaryDark;
+}
+
+.university {
+    margin-top: 0.45rem;
+    margin-bottom: 0.45rem;
+}

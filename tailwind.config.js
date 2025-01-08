@@ -6,52 +6,52 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        Roboto: ['Roboto', 'sans-serif'],
+      padding: {
+        'globalVerticalPadding': '52.5px',
+        'globalVerticalPaddingMobile': '31.5px',
       },
-      screens: {
-        'xsmall': '576px',
-        'small': '640px',
-        'medium': '992px',
-        'large': '1200px',
+      margin: {
+        'actionHorizontalMargin': '3.5px',
       },
-      maxWidth: {
-        'xsmall': '576px',
-        'small': '640px',
-        'medium': '992px',
-        'large': '1200px',
-      },
-      container: {
-        center: true,
-        screens: {
-          'xsmall': '576px',
-          'small': '640px',
-          'medium': '992px',
-          'large': '1200px',
-        },
-      },
-      fontSize: {
-        'tiny': '0.625rem', // 10px
-        'smaller': '0.875rem', // 14px
-        'base': '1rem',       // 16px
-        'lg': '1.125rem',     // 18px
-        'xl': '1.25rem',      // 20px
-        '2xl': '1.5rem',      // 24px
-        '3xl': '1.875rem',    // 30px
-        '4xl': '2.25rem',     // 36px
-        '5xl': '3rem',        // 48px
+      lineHeight: {
+        '1.2': '1.2',
       },
       colors: {
-        'darkPrimary': 'rgb(33, 37, 41)',
-        'lightPrimary': 'rgb(255, 255, 255)',
-        'darkSecondary': 'rgb(222, 226, 230)',
-        'lightSecondary': 'rgb(33, 37, 41)',
-        'darkTertiary': 'rgb(239, 154, 164)',
-        'lightTertiary': 'rgb(165, 28, 48)',
-        'darkQuaternary': 'rgb(222, 226, 230)',
-        'lightQuaternary': 'rgb(33, 37, 41)',
-        'darkQuaternaryO': 'rgba(222, 226, 230, 0.75)',
-        'lightQuaternaryO': 'rgba(33, 37, 41, 0.75)'
+        primaryDark: 'rgb(33, 37, 41)',
+        secondaryDark: 'rgb(222, 226, 230)',
+        tertiaryDark: 'rgb(239, 154, 164)',
+        quaternaryDark: 'rgba(222, 226, 230, 0.75)',
+        primaryLight: 'rgb(255, 255, 255)',
+        secondaryLight: 'rgb(33, 37, 41)',
+        tertiaryLight: 'rgb(165, 28, 48)',
+        quaternaryLight: 'rgba(33, 37, 41, 0.75)',
+      },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        tiny: '13.125px',
+        small: '15.75px',
+        regular: '21px',
+        large: '31.5px',
+      },
+      width: {
+        'large': '1200px',
+        'medium': '992px',
+        'regular': '768px',
+        'small': '576px'
+      },
+      screens: {
+        'large': '1200px',
+        'medium': '992px',
+        'regular': '768px',
+        'small': '576px'
+      },
+      maxWidth: {
+        'large': '1200px',
+        'medium': '992px',
+        'regular': '768px',
+        'small': '576px'
       },
     },
   },
