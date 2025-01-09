@@ -5,23 +5,29 @@ import './App.css'
 import Intro from './components/Intro'
 import Values from './components/Values'
 import Background from './components/Background'
+import About from './components/About'
 
 const sections = [
   {
-      id: 'section1',
-      name: 'Section 1',
-      componentName: <Intro />,
+    id: 'intro',
+    name: 'Intro',
+    componentName: <Intro />,
   },
   {
-      id: 'section2',
-      name: 'Section 2',
-      componentName: <Values />,
+    id: 'values',
+    name: 'Values',
+    componentName: <Values />,
   },
   {
-      id: 'section3',
-      name: 'Section 3',
-      componentName: <Background />,
-  }
+    id: 'background',
+    name: 'Background',
+    componentName: <Background />,
+  },
+  {
+    id: 'about',
+    name: 'About',
+    componentName: <About />,
+  },
 ]
 
 function App() {
