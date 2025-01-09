@@ -1,4 +1,4 @@
-:root {
-  @apply text-base;
-  @apply text-white bg-black;
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  @apply text-black bg-white dark:text-white dark:bg-black;
 }

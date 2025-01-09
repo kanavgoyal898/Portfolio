@@ -1,0 +1,26 @@
+h1 {
+    display: inline-block;
+}
+
+h1 .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+h1 .first-letter {
+    display: inline-block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h1:hover .letter {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h1:hover .first-letter {
+    opacity: 1;
+    transform: translateX(0);
+}
