@@ -23,7 +23,7 @@ const Intro = () => {
                 ))}
             </div>
 
-            <div className="overflow-hidden relative w-full">
+            <div className="w-full">
                 <div className="flex transition-all duration-0 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
                     {slides.map((slide, index) => (
                         <div key={ index } className="flex-shrink-0 w-full" style={{ opacity: index === currentIndex ? 1 : 0, pointerEvents: index === currentIndex ? 'auto' : 'none', transition: 'opacity 0.3s ease-in-out', }}>

@@ -64,7 +64,7 @@ const About = () => {
     const currentYear = new Date().getFullYear()
 
     return (
-        <div className="grid grid-cols-2 grid-rows-3 gap-4 w-full">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full">
             <div className="flex items-start justify-start"></div>
             <div className="flex items-start justify-start">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores nemo illo quod, repellat dolorem nostrum facere at laborum, officiis, magnam impedit est recusandae debitis illum dolore eius vel cum? Nam corrupti soluta modi quae quaerat, tenetur, unde explicabo nulla, voluptatibus perferendis voluptatem laborum? Quaerat voluptatum atque voluptatibus praesentium cumque inventore laborum dolores reiciendis corporis laboriosam, eaque repudiandae hic blanditiis enim tempora possimus laudantium? Eligendi minima vel quis deserunt illo totam provident dolores voluptate. Ut aperiam in soluta suscipit doloribus sapiente neque, architecto voluptas aspernatur ex consectetur. Temporibus totam deleniti nostrum consequuntur soluta consequatur at ea impedit ducimus, aperiam iure ullam dolore adipisci quis facilis odio inventore est sequi ratione ab quod possimus reprehenderit aliquam? Iste sequi culpa architecto, cum nesciunt maxime earum, explicabo doloribus vero odit perferendis.
@@ -97,7 +97,7 @@ const About = () => {
                 <div className="flex flex-col gap-[2px]">
                     <p className="text-sm">Design & code by Kanav Goyal</p>
                     <p className="text-sm">Credentials</p>
-                    <p className="text-sm py-4">&copy; { currentYear }</p>
+                    <p className="text-sm pt-4">&copy; { currentYear }</p>
                 </div>
             </div>
         </div>

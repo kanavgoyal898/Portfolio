@@ -10,6 +10,8 @@ export default {
       colors: {
         accentLight: '#00000055',
         accentDark: '#FFFFFF73',
+        accentBgLight: '#0000000D',
+        accentBgDark: '#FFFFFF1F',
       },
     },
   },

@@ -3,8 +3,10 @@ import ContentSection from './components/ContentSection'
 import './App.css'
 
 import Intro from './components/Intro'
+import Work from './components/Work'
 import Values from './components/Values'
 import Background from './components/Background'
+import References from './components/References'
 import About from './components/About'
 import Contact from './components/Contact'
 
@@ -15,6 +17,11 @@ const sections = [
     componentName: <Intro />,
   },
   {
+    id: 'work',
+    name: 'Work',
+    componentName: <Work />,
+  },
+  {
     id: 'values',
     name: 'Values',
     componentName: <Values />,
@@ -23,6 +30,11 @@ const sections = [
     id: 'background',
     name: 'Background',
     componentName: <Background />,
+  },
+  {
+    id: 'references',
+    name: 'References',
+    componentName: <References />,
   },
   {
     id: 'about',
