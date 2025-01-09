@@ -33,7 +33,7 @@ const NavigationSection = ({ navigationItems }) => {
         <div className="flex basis-11/12">
             <nav className="flex flex-col py-8">
                 {navigationItems.map((item, index) => (
-                    <button key={ index } onClick={() => handleScroll(item.id)} className={`flex ${activeSection === item.id ? 'text-black dark:text-white' : ''} text-accentLight dark:text-accentDark`}>
+                    <button key={ index } onClick={ () => handleScroll(item.id) } className={ `flex ${activeSection === item.id ? 'text-black dark:text-white' : ''} text-accentLight dark:text-accentDark hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out` }>
                         { item.name }
                     </button>
                 ))}

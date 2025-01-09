@@ -17,13 +17,20 @@ const Intro = () => {
         <div className="w-full">
             <div className="flex justify-start mb-4 gap-4">
                 {slides.map((slide, index) => (
-                    <p key={ index } className={ `cursor-pointer ${ index === currentIndex ? 'text-black dark:text-white' : '' } text-accentLight dark:text-accentDark`} onClick={ () => handleHeadingClick(index) }>
+                    <p key={ index } className={`cursor-pointer ${ index === currentIndex ? 'text-black dark:text-white' : '' } text-accentLight dark:text-accentDark`} onClick={ () => handleHeadingClick(index) }>
                         { slide.title }
                     </p>
                 ))}
             </div>
-            <div className="flex text-6xl">
-                <p>{ slides[currentIndex].content }</p>
+
+            <div className="overflow-hidden relative w-full">
+                <div className="flex transition-all duration-0 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
+                    {slides.map((slide, index) => (
+                        <div key={ index } className="flex-shrink-0 w-full" style={{ opacity: index === currentIndex ? 1 : 0, pointerEvents: index === currentIndex ? 'auto' : 'none', transition: 'opacity 0.3s ease-in-out', }}>
+                            <p className="text-6xl">{ slide.content }</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )
