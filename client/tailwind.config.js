@@ -6,7 +6,12 @@ export default {
   ],
   darkMode: 'media',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        accentLight: '#00000055',
+        accentDark: '#FFFFFF73',
+      },
+    },
   },
   plugins: [],
 }
