@@ -1,6 +1,6 @@
 .references-section {
+    @apply gap-4;
     @apply w-full;
-    @apply gap-12;
 }
 
 .reference-container {
@@ -13,5 +13,6 @@
 }
 
 .reference-details {
+    @apply leading-[20px];
     @apply text-accentLight dark:text-accentDark;
 }

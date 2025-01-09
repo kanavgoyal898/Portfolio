@@ -1,5 +1,5 @@
 .content-container {
-    @apply mx-10 md:me-10;
+    @apply mx-4 md:me-10;
     @apply md:ml-[33.3%];
     @apply w-[2/3] h-screen;
     @apply overflow-x-hidden overflow-y-auto;

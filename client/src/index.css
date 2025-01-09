@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
+  @apply leading-none;
+  font-size: var(--root-size-base);
   font-family: Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
-  @apply text-black dark:text-white;
   @apply bg-white dark:bg-black;
+  @apply text-black dark:text-white;
 }
 
 a {
-  @apply underline underline-offset-8;
+  @apply underline underline-offset-4;
   @apply text-black dark:text-white;
   @apply decoration-accentLight dark:decoration-accentDark;
   @apply hover:decoration-black hover:dark:decoration-white;
@@ -21,3 +22,26 @@ a {
   @apply flex;
   @apply items-start justify-start
 }
+
+:root {
+  --root-size-base: 16px;
+  --font-size-2xl: 18px;
+  --font-size-6xl: 32px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --root-size-base: 16px;
+    --font-size-2xl: 20px;
+    --font-size-6xl: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --root-size-base: 16px;
+    --font-size-2xl: 24px;
+    --font-size-6xl: 60px;
+  }
+}
+

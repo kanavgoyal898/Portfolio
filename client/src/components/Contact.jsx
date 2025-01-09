@@ -25,10 +25,10 @@ const Contact = () => {
                 </div>
                 <div className="socials-container">
                     {mails.map((mail, index) => (
-                        <a key={ index } href={ mail.link }>{ mail.mailText }</a>
+                        <a key={ index } href={ mail.link } className="text-xs">{ mail.mailText }</a>
                     ))}
                     {socials.map((social, index) => (
-                        <a key={ index } href={ social.link }>{ social.linkText }</a>
+                        <a key={ index } href={ social.link } className="text-xs">{ social.linkText }</a>
                     ))}
                 </div>
             </div>

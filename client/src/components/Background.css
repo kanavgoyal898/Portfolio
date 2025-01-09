@@ -1,6 +1,7 @@
 .background-container {
     @apply w-full;
-    @apply gap-20;
+    @apply gap-x-4;
+    @apply gap-y-4 md:gap-y-16;
 }
 
 .background-box {

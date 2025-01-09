@@ -16,11 +16,6 @@ const sections = [
     componentName: <Intro />,
   },
   {
-    id: 'work',
-    name: 'Work',
-    componentName: <Work />,
-  },
-  {
     id: 'values',
     name: 'Values',
     componentName: <Values />,

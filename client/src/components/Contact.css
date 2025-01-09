@@ -1,7 +1,7 @@
 .contact-container {
     @apply gap-4;
     @apply w-full;
-    @apply grid grid-rows-1 grid-cols-2;
+    @apply grid grid-cols-1 md:grid-cols-2;
 }
 
 .contact-details {
@@ -10,6 +10,7 @@
 }
 
 .contact-description {
+    @apply gap-2;
     @apply flex flex-col;
     @apply items-start justify-start;
 }
@@ -24,9 +25,10 @@
 }
 
 .socials-container {
-    @apply gap-8; 
-    @apply flex flex-row flex-wrap;
+    @apply pt-16 md:pt-0;
+    @apply gap-2 md:gap-4; 
     @apply items-start justify-start;
+    @apply flex flex-col md:flex-row flex-wrap;
 }
 
 .contact-image {

@@ -1,3 +1,4 @@
 .work {
-    @apply w-full h-screen;
+    @apply md:w-full;
+    @apply md:h-screen;
 }

@@ -13,6 +13,11 @@ export default {
         accentBgLight: '#0000000D',
         accentBgDark: '#FFFFFF1F',
       },
+      fontSize: {
+        'base': 'var(--font-size-base)',
+        '2xl': 'var(--font-size-2xl)',
+        '6xl': 'var(--font-size-6xl)',
+    },
     },
   },
   plugins: [],

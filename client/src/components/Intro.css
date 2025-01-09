@@ -3,7 +3,7 @@
 }
 
 .intro-titles {
-    @apply my-4;
+    @apply mb-4;
     @apply gap-4;
     @apply flex flex-row;
     @apply items-start justify-start;
