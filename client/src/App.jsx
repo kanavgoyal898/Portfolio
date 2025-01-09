@@ -6,6 +6,7 @@ import Intro from './components/Intro'
 import Values from './components/Values'
 import Background from './components/Background'
 import About from './components/About'
+import Contact from './components/Contact'
 
 const sections = [
   {
@@ -27,6 +28,11 @@ const sections = [
     id: 'about',
     name: 'About',
     componentName: <About />,
+  },
+  {
+    id: 'contact',
+    name: 'Contact',
+    componentName: <Contact />,
   },
 ]
 
