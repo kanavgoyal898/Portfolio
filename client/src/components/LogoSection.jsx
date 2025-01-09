@@ -1,6 +1,6 @@
-const name = "Kanav Goyal"
+const name = 'Kanav Goyal'
 
-const Logo = () => {
+const LogoSection = () => {
   return (
     <div className="flex basis-1/3 bg-red-500">
       <a href="#" className="max-w-fit max-h-fit">
@@ -10,4 +10,4 @@ const Logo = () => {
   )
 }
 
-export default Logo
+export default LogoSection

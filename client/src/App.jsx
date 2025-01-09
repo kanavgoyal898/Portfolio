@@ -4,12 +4,10 @@ import ContentSection from './components/ContentSection'
 function App() {
 
   return (
-    <>
-      <div className="flex flex-row px-[40px]">
+      <div className="flex h-full">
         <AsideSection />
         <ContentSection />
       </div>
-    </>
   )
 }
 

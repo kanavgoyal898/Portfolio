@@ -1,6 +1,4 @@
 :root {
-  color: white;
-  background-color: black;
-
   @apply text-base;
+  @apply text-white bg-black;
 }
