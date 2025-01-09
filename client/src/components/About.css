@@ -1,0 +1,23 @@
+.about-container {
+    @apply gap-4;
+    @apply w-full;
+    @apply grid grid-cols-2 grid-rows-2;
+}
+
+.about-column {
+    @apply gap-4;
+    @apply flex flex-col;
+}
+
+.about-title {
+    @apply text-2xl;
+}
+
+.about-cell {
+    @apply gap-[2px];
+    @apply flex flex-col;
+}
+
+.about-description {
+    @apply text-sm;
+}

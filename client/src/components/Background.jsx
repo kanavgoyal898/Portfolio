@@ -1,3 +1,5 @@
+import './Background.css'
+
 const experiences = [
     {
         logo: "/path/to/logo1.png",
@@ -43,22 +45,22 @@ const experiences = [
 
 const Background = () => {
     return (
-        <div className="grid grid-cols-2 grid-rows-auto gap-20 p-4 w-full">
-            <div className="flex items-start justify-start">
+        <div className="grid grid-rows-auto grid-cols-2 background-container">
+            <div className="box">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores nemo illo quod, repellat dolorem nostrum facere at laborum, officiis, magnam impedit est recusandae debitis illum dolore eius vel cum? Nam corrupti soluta modi quae quaerat, tenetur, unde explicabo nulla, voluptatibus perferendis voluptatem laborum? Quaerat voluptatum atque voluptatibus praesentium cumque inventore laborum dolores reiciendis corporis laboriosam, eaque repudiandae hic blanditiis enim tempora possimus laudantium? Eligendi minima vel quis deserunt illo totam provident dolores voluptate. Ut aperiam in soluta suscipit doloribus sapiente neque, architecto voluptas aspernatur ex consectetur. Temporibus totam deleniti nostrum consequuntur soluta consequatur at ea impedit ducimus, aperiam iure ullam dolore adipisci quis facilis odio inventore est sequi ratione ab quod possimus reprehenderit aliquam? Iste sequi culpa architecto, cum nesciunt maxime earum, explicabo doloribus vero odit perferendis.
             </div>
-            <div className="flex items-start justify-start"></div>
+            <div className="box"></div>
             {experiences.map((experience, index) => (
                 <>
-                    <div key={ index } className="flex flex-col items-start justify-start gap-2">
-                        <div className="h-[96px] w-[96px] rounded-full bg-accentBgLight dark:bg-accentBgDark">
+                    <div key={ index } className="background-box">
+                        <div className="background-picture">
                         </div>
-                        <h3 className="text-2xl">{ experience.companyName }</h3>
-                        <h2 className="text-6xl">{ experience.designation }</h2>
+                        <h3 className="background-name">{ experience.companyName }</h3>
+                        <h2 className="background-designation">{ experience.designation }</h2>
                         <p>{ experience.year } { experience.designation }</p>
-                        <p className="text-accentLight dark:text-accentDark">{ experience.description }</p>
+                        <p className="background-description">{ experience.description }</p>
                     </div>
-                    <div className="flex items-start justify-start"></div>
+                    <div className="box"></div>
                 </>
             ))}
         </div>

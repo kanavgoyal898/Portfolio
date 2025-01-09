@@ -7,7 +7,7 @@ const LogoSection = () => {
     <button className="logo-section">
       <h1 className="logo">
         {name.split('').map((letter, index) => (
-          <span key={ index } className={ letter === ' ' ? 'space' : index === 0 ? 'first-letter' : 'letter' } style={{ animationDelay: `${0.1 * index}s` }} dangerouslySetInnerHTML={{ __html: letter === ' ' ? '&nbsp;' : letter }}/>
+          <span key={ index } className={ letter === ' ' ? 'space' : index === 0 ? 'first-letter' : 'letter' } style={{ animationDelay: `${0.1 * (index)**(0.3)}s` }} dangerouslySetInnerHTML={{ __html: letter === ' ' ? '&nbsp;' : letter }}/>
         ))}
       </h1>
     </button>

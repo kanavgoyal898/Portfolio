@@ -1,28 +1,38 @@
 import goyalImage from '../assets/goyal.jpg'
+import './Contact.css'
+
+const mails = [
+    {
+        link: '#',
+        mailText: 'kanavgoyal898@gmail.com',
+    },
+]
 
 const socials = [
     {
         link: '#',
-        linkText: 'LinkedIn',
+        linkText: 'Social Link',
     },
 ]
 
 const Contact = () => {
     return (
-        <div className="grid grid-cols-2 grid-rows-1 gap-4 p-4 w-full">
-            <div className="flex flex-col items-start justify-between">
-                <div className="flex flex-col items-start justify-start">
-                    <div className="text-accentLight dark:text-accentDark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <div className="text-black dark:text-white text-2xl">Lorem, ipsum dolor sit amet</div>
+        <div className="contact-container">
+            <div className="contact-details">
+                <div className="contact-description">
+                    <div className="contact-subheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div className="contact-heading">Lorem, ipsum dolor sit amet</div>
                 </div>
-                <div className="flex flex-row items-start justify-start gap-8 flex-wrap">
-                    <a href="#">kanavgoyal898@gmail.com</a>
+                <div className="socials-container">
+                    {mails.map((mail, index) => (
+                        <a key={ index } href={ mail.link }>{ mail.mailText }</a>
+                    ))}
                     {socials.map((social, index) => (
                         <a key={ index } href={ social.link }>{ social.linkText }</a>
                     ))}
                 </div>
             </div>
-            <div className="flex items-start justify-start">
+            <div className="contact-image">
                 <img src={ goyalImage } alt="Kanav Goyal" style={{ width: '100%', height: 'auto' }} />
             </div>
         </div>

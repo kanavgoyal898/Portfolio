@@ -1,0 +1,17 @@
+.references-section {
+    @apply w-full;
+    @apply gap-12;
+}
+
+.reference-container {
+    @apply flex flex-col;
+    @apply items-start justify-start;
+}
+
+.reference-remark {
+    @apply text-2xl;
+}
+
+.reference-details {
+    @apply text-accentLight dark:text-accentDark;
+}

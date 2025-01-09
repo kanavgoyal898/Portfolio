@@ -1,0 +1,21 @@
+.intro-section {
+    @apply w-full;
+}
+
+.intro-titles {
+    @apply my-4;
+    @apply gap-4;
+    @apply flex flex-row;
+    @apply items-start justify-start;
+}
+
+.intro-description {
+    @apply flex flex-row;
+    @apply transition-all duration-0 ease-in-out;
+}
+
+.intro-description-box {
+    @apply w-full;
+    @apply text-6xl;
+    @apply flex-shrink-0;
+}

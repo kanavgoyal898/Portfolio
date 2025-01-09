@@ -1,3 +1,5 @@
+import './References.css'
+
 const references = [
     {
         remark: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.",
@@ -33,11 +35,11 @@ const references = [
 
 const References = () => {
     return (
-        <div className="grid grid-cols-2 grid-rows-auto gap-12 p-4 w-full">
+        <div className="grid grid-rows-auto grid-cols-2 references-section">
             {references.map((reference, index) => (
-                <div key={index} className="flex flex-col items-start justify-start">
-                    <div className="text-2xl">{ reference.remark }</div>
-                    <p className="text-accentLight dark:text-accentDark">
+                <div key={ index } className="reference-container">
+                    <div className="reference-remark">{ reference.remark }</div>
+                    <p className="reference-details">
                         <a href={ reference.authorLink }>{ reference.author }</a>
                         &nbsp; { reference.designation }
                     </p>

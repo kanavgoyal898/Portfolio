@@ -1,0 +1,29 @@
+.background-container {
+    @apply w-full;
+    @apply gap-20;
+}
+
+.background-box {
+    @apply gap-2;
+    @apply flex flex-col;
+    @apply items-start justify-start;
+}
+
+.background-picture {
+    @apply rounded-full;
+    @apply h-[96px] w-[96px];
+    @apply bg-accentBgLight dark:bg-accentBgDark;
+}
+
+.background-name {
+    @apply text-2xl;
+}
+
+.background-designation {
+    @apply text-6xl;
+}
+
+.background-description {
+    @apply text-accentLight dark:text-accentDark;
+}
+

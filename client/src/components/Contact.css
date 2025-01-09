@@ -1,0 +1,35 @@
+.contact-container {
+    @apply gap-4;
+    @apply w-full;
+    @apply grid grid-rows-1 grid-cols-2;
+}
+
+.contact-details {
+    @apply flex flex-col;
+    @apply items-start justify-between;
+}
+
+.contact-description {
+    @apply flex flex-col;
+    @apply items-start justify-start;
+}
+
+.contact-subheading {
+    @apply text-accentLight dark:text-accentDark;
+}
+
+.contact-heading {
+    @apply text-2xl;
+    @apply text-black dark:text-white;
+}
+
+.socials-container {
+    @apply gap-8; 
+    @apply flex flex-row flex-wrap;
+    @apply items-start justify-start;
+}
+
+.contact-image {
+    @apply flex flex-row;
+    @apply items-start justify-start;
+}

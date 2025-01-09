@@ -16,3 +16,8 @@ a {
   @apply decoration-accentLight dark:decoration-accentDark;
   @apply hover:decoration-black hover:dark:decoration-white;
 }
+
+.box {
+  @apply flex;
+  @apply items-start justify-start
+}
