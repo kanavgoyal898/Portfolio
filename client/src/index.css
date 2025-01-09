@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html {
+  font-family: Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  @apply text-black dark:text-white;
+  @apply bg-white dark:bg-black;
+}
+
+a {
+  @apply underline underline-offset-8;
+  @apply text-black dark:text-white;
+  @apply decoration-accentLight dark:decoration-accentDark;
+  @apply hover:decoration-black hover:dark:decoration-white;
 }

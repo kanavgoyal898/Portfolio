@@ -1,9 +1,10 @@
 import LogoSection from './LogoSection'
 import NavigationSection from './NavigationSection'
+import './AsideSection.css'
 
 const AsideSection = ({ navigationItems }) => {
   return (
-    <div className="w-[33.3%] h-screen fixed top-0 left-0 ps-10 flex flex-col">
+    <div className="aside-container">
       <LogoSection />
       <NavigationSection navigationItems={ navigationItems } />
     </div>

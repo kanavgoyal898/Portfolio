@@ -1,7 +1,3 @@
-import AsideSection from './components/AsideSection'
-import ContentSection from './components/ContentSection'
-import './App.css'
-
 import Intro from './components/Intro'
 import Work from './components/Work'
 import Values from './components/Values'
@@ -9,6 +5,9 @@ import Background from './components/Background'
 import References from './components/References'
 import About from './components/About'
 import Contact from './components/Contact'
+import AsideSection from './components/AsideSection'
+import ContentSection from './components/ContentSection'
+import './App.css'
 
 const sections = [
   {
@@ -50,7 +49,7 @@ const sections = [
 
 function App() {
   return (
-      <div className="flex h-full">
+      <div className="screen">
         <AsideSection navigationItems={ sections } />
         <ContentSection navigationItems={ sections } />
       </div>

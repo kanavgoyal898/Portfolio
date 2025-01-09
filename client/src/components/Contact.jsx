@@ -16,9 +16,9 @@ const Contact = () => {
                     <div className="text-black dark:text-white text-2xl">Lorem, ipsum dolor sit amet</div>
                 </div>
                 <div className="flex flex-row items-start justify-start gap-8 flex-wrap">
-                    <a href="#" className="underline underline-offset-8 decoration-accentLight dark:decoration-accentDark hover:decoration-black hover:dark:decoration-white">kanavgoyal898@gmail.com</a>
+                    <a href="#">kanavgoyal898@gmail.com</a>
                     {socials.map((social, index) => (
-                        <a key={ index } href={ social.link } className="underline underline-offset-8 decoration-accentLight dark:decoration-accentDark hover:decoration-black hover:dark:decoration-white">{ social.linkText }</a>
+                        <a key={ index } href={ social.link }>{ social.linkText }</a>
                     ))}
                 </div>
             </div>

@@ -38,7 +38,7 @@ const References = () => {
                 <div key={index} className="flex flex-col items-start justify-start">
                     <div className="text-2xl">{ reference.remark }</div>
                     <p className="text-accentLight dark:text-accentDark">
-                        <a href={ reference.authorLink } className="underline underline-offset-4 text-black dark:text-white decoration-accentLight dark:decoration-accentDark hover:decoration-black hover:dark:decoration-white">{ reference.author }</a>
+                        <a href={ reference.authorLink }>{ reference.author }</a>
                         &nbsp; { reference.designation }
                     </p>
                 </div>

@@ -1,0 +1,9 @@
+.navigation-section {
+    @apply basis-[11/12];
+    @apply max-w-fit max-h-fit;
+}
+
+.navigation-bar {
+    @apply py-8;
+    @apply flex flex-col;
+}

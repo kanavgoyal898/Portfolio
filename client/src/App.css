@@ -1,4 +1,4 @@
-html {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  @apply text-black bg-white dark:text-white dark:bg-black;
+.screen {
+  @apply flex flex-row;
+  @apply w-full h-full;
 }
