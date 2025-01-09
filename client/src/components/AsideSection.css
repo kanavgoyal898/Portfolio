@@ -1,6 +1,7 @@
 .aside-container {
     @apply ms-10;
-    @apply flex flex-col;
+    @apply hidden;
     @apply w-[1/3] h-screen;
     @apply fixed top-0 left-0;
+    @apply md:flex md:flex-col;
 }
