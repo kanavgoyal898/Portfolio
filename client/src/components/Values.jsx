@@ -3,8 +3,10 @@ import './Values.css'
 const Values = () => {
     return (
         <div className="values-container">
-            <div className="box values-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div className="box">
+                <p className="values-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
             <div className="box"></div>
             <div className="box"></div>

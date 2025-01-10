@@ -35,7 +35,7 @@ const references = [
 
 const References = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 references-section">
+        <div className="references-section">
             {references.map((reference, index) => (
                 <div key={ index } className="reference-container">
                     <div className="reference-remark">{ reference.remark }</div>

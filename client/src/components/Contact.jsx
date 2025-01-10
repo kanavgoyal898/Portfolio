@@ -6,9 +6,25 @@ const mails = [
         link: '#',
         mailText: 'kanavgoyal898@gmail.com',
     },
+    {
+        link: '#',
+        mailText: 'kanavgoyal898@gmail.com',
+    },
+    {
+        link: '#',
+        mailText: 'kanavgoyal898@gmail.com',
+    },
 ]
 
 const socials = [
+    {
+        link: '#',
+        linkText: 'Social Link',
+    },
+    {
+        link: '#',
+        linkText: 'Social Link',
+    },
     {
         link: '#',
         linkText: 'Social Link',
@@ -24,12 +40,16 @@ const Contact = () => {
                     <div className="contact-heading">Lorem, ipsum dolor sit amet</div>
                 </div>
                 <div className="socials-container">
-                    {mails.map((mail, index) => (
-                        <a key={ index } href={ mail.link } className="text-xs">{ mail.mailText }</a>
-                    ))}
-                    {socials.map((social, index) => (
-                        <a key={ index } href={ social.link } className="text-xs">{ social.linkText }</a>
-                    ))}
+                    <div className="social-container">
+                        {mails.map((mail, index) => (
+                            <a key={ index } href={ mail.link } className="link-text">{ mail.mailText }</a>
+                        ))}
+                    </div>
+                    <div className="social-container">
+                        {socials.map((social, index) => (
+                            <a key={ index } href={ social.link } className="link-text">{ social.linkText }</a>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="contact-image">

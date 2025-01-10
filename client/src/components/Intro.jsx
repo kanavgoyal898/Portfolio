@@ -1,5 +1,5 @@
-import './Intro.css'
 import { useState } from 'react'
+import './Intro.css'
 
 const slides = [
     { title: 'Slide 1', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, ligula id tincidunt ultrices, justo sapien cursus arcu, nec venenatis magna orci a sapien. Fusce tempor eget orci nec.' },

@@ -1,9 +1,12 @@
 .references-section {
-    @apply gap-4;
     @apply w-full;
+    @apply gap-x-4;
+    @apply gap-y-8 md:gap-y-12 lg:gap-y-16;
+    @apply grid grid-cols-1 md:grid-cols-2;
 }
 
 .reference-container {
+    @apply ps-4 md:ps-0;
     @apply flex flex-col;
     @apply items-start justify-start;
 }

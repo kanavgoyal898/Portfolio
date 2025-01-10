@@ -1,10 +1,12 @@
 .contact-container {
-    @apply gap-4;
     @apply w-full;
-    @apply grid grid-cols-1 md:grid-cols-2;
+    @apply gap-x-4;
+    @apply gap-y-4;
+    @apply grid grid-cols-1 lg:grid-cols-2;
 }
 
 .contact-details {
+    @apply h-full;
     @apply flex flex-col;
     @apply items-start justify-between;
 }
@@ -16,6 +18,7 @@
 }
 
 .contact-subheading {
+    @apply text-base;
     @apply text-accentLight dark:text-accentDark;
 }
 
@@ -25,10 +28,22 @@
 }
 
 .socials-container {
-    @apply pt-16 md:pt-0;
-    @apply gap-2 md:gap-4; 
+    @apply pt-16;
+    @apply flex-wrap;
+    @apply pb-4 md:pb-0;
+    @apply flex flex-col;
+    @apply gap-8 md:gap-16; 
+    @apply md:flex md:flex-row;
     @apply items-start justify-start;
-    @apply flex flex-col md:flex-row flex-wrap;
+}
+
+.social-container {
+    @apply gap-2;
+    @apply flex flex-col;
+}
+
+.link-text {
+    @apply text-xs;
 }
 
 .contact-image {

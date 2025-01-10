@@ -106,12 +106,12 @@ const About = () => {
                 ))}
             </div>
             <div className="box"></div>
-            <div className="about-column my-8">
+            <div className="about-column mt-8">
                 <h2 className="about-title">Credentials</h2>
                 <div className="about-cell">
                     <p className="about-description">Design & code by Kanav Goyal</p>
                     <p className="about-description">Credentials</p>
-                    <p className="about-description my-8">&copy; { currentYear }</p>
+                    <p className="about-description mt-8">&copy; { currentYear }</p>
                 </div>
             </div>
         </div>

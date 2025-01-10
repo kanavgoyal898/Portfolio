@@ -1,18 +1,24 @@
 .background-container {
     @apply w-full;
     @apply gap-x-4;
-    @apply gap-y-4 md:gap-y-16;
+    @apply gap-y-8 md:gap-y-12 lg:gap-y-16;
+    @apply grid grid-cols-1 md:grid-cols-2;
 }
 
 .background-box {
     @apply gap-2;
+    @apply ps-4 md:ps-0;
     @apply flex flex-col;
     @apply items-start justify-start;
 }
 
 .background-picture {
     @apply rounded-full;
-    @apply h-[96px] w-[96px];
+    @apply flex flex-row;
+    @apply h-[72px] w-[72px];
+    @apply md:h-[84px] md:w-[84px];
+    @apply lg:h-[96px] lg:w-[96px];
+    @apply items-center justify-center;
     @apply bg-accentBgLight dark:bg-accentBgDark;
 }
 
