@@ -7,6 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import AsideSection from './components/AsideSection'
 import ContentSection from './components/ContentSection'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 const sections = [
@@ -43,6 +44,29 @@ const sections = [
 ]
 
 function App() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/query', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            query: '*[_type == "education"]',
+          }),
+        })
+        const result = await response.json()
+        setData(result)
+        console.log(result)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+
+    fetchData()
+  }, [])
+
   return (
       <div className="screen">
         <AsideSection navigationItems={ sections } />
