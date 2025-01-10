@@ -5,7 +5,7 @@
 html {
   @apply leading-none;
   font-size: var(--root-size-base);
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   @apply bg-white dark:bg-black;
   @apply text-black dark:text-white;

@@ -16,6 +16,12 @@ h1:hover .letter {
     animation: fade-in-opacity 0.3s ease-in-out forwards;
 }
 
+@media (max-width: 768px) {
+    h1 .letter {
+        animation: fade-in-opacity 0.3s ease-in-out forwards;
+    }
+}
+
 @keyframes fade-in-opacity {
     from {
         opacity: 0;
@@ -26,8 +32,8 @@ h1:hover .letter {
 }
 
 .logo-section {
+    @apply w-full;
     @apply basis-[1/12];
-    @apply max-w-fit max-h-fit;
 }
 
 .logo {
