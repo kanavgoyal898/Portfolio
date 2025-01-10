@@ -1,12 +1,17 @@
 .content-container {
-    @apply mx-4 md:me-10;
-    @apply md:ml-[33.3%];
-    @apply w-[2/3] h-screen;
+    @apply px-2;                                /* padding start and end */
+    @apply h-screen;
+    @apply md:ml-[25%];                         /* ipad aside section width */
+    @apply lg:ml-[33%];                         /* imac aside section width */
+    @apply md:ps-0 md:pe-4;                     /* ipad padding start and end */
+    @apply lg:ps-0 lg:pe-8;                     /* imac padding start and end */
+    @apply w-full md:w-[75%] lg:w-[66%];        /* width of content section */
     @apply overflow-x-hidden overflow-y-auto;
 }
 
 .content-section {
-    @apply pt-8 md:pt-32 pb-0;
-    @apply min-h-full max-h-fit w-full;
-    @apply flex flex-col items-start justify-start;
+    @apply flex flex-col;
+    @apply min-h-full min-w-full;
+    @apply items-start justify-start;
+    @apply pt-8 md:pt-16 lg:pt-32  pb-0;        /* padding */
 }

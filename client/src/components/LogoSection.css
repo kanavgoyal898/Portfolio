@@ -1,5 +1,6 @@
 h1 {
     display: inline-block;
+    opacity: 1;
 }
 
 h1 .letter {
@@ -33,7 +34,9 @@ h1:hover .letter {
 
 .logo-section {
     @apply w-full;
+    @apply inline-flex;
     @apply basis-[1/12];
+    @apply justify-center md:justify-start lg:justify-start;
 }
 
 .logo {

@@ -6,5 +6,7 @@
 .navigation-bar {
     @apply py-8;
     @apply gap-2;
+    @apply text-base;
     @apply flex flex-col;
+    @apply items-start justify-start;
 }

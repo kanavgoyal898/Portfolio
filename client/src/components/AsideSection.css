@@ -1,7 +1,10 @@
 .aside-container {
-    @apply ms-10;
-    @apply hidden;
-    @apply w-[1/3] h-screen;
-    @apply fixed top-0 left-0;
-    @apply md:flex md:flex-col;
+    @apply px-0;                            /* hidden in mobile view */
+    @apply hidden;                          /* hidden in mobile view */
+    @apply h-screen;                        
+    @apply md:ps-4 md:pe-0;                 /* ipad padding start and end */
+    @apply lg:ps-8 md:pe-0;                 /* imac padding start and end */
+    @apply fixed top-0 left-0;              /* fixed to top left */
+    @apply md:flex md:flex-col;             
+    @apply w-full md:w-[25%] lg:w-[33%];    /* width of aside section */    
 }

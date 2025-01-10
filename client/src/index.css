@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 html {
-  @apply leading-none;
-  font-size: var(--root-size-base);
   font-family: Roboto, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: var(--root-size-base);
+  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
+  
+  @apply leading-none;                     
   @apply bg-white dark:bg-black;
   @apply text-black dark:text-white;
 }
 
+
 a {
+  /* link styling */
   @apply underline underline-offset-4;
   @apply text-black dark:text-white;
   @apply decoration-accentLight dark:decoration-accentDark;
@@ -19,29 +23,30 @@ a {
 }
 
 .box {
+  /* generic box styling */
   @apply flex;
   @apply items-start justify-start
 }
 
 :root {
-  --root-size-base: 16px;
   --font-size-2xl: 18px;
   --font-size-6xl: 32px;
+  --root-size-base: 14px;
 }
 
 @media (min-width: 768px) {
   :root {
-    --root-size-base: 16px;
     --font-size-2xl: 20px;
     --font-size-6xl: 48px;
-  }
+    --root-size-base: 16px;
+  } 
 }
 
 @media (min-width: 1024px) {
   :root {
-    --root-size-base: 16px;
     --font-size-2xl: 24px;
     --font-size-6xl: 60px;
+    --root-size-base: 18px;
   }
 }
 

@@ -47,7 +47,7 @@ const NavigationSection = ({ navigationItems }) => {
             <nav className="navigation-bar">
                 {navigationItems.map((item, index) => (
                     <button key={ index } onClick={ () => handleScroll(item.id) } className={ `${activeSection === item.id ? 'text-black dark:text-white' : ''} flex text-accentLight dark:text-accentDark hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out` }>
-                        {item.name}
+                        { item.name }
                     </button>
                 ))}
             </nav>
