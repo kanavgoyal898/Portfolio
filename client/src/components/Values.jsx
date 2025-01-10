@@ -1,17 +1,61 @@
+import { useEffect, useState } from 'react'
 import './Values.css'
 
 const Values = () => {
+    const [personalStatement, setPersonalStatement] = useState([])
+            
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                    query: '*[_type == "statement" && title == "Personal Statement"]',
+                    }),
+                })
+                const result = await response.json()
+                setPersonalStatement(result)
+                } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchData()
+    }, [])
+
+    const [researchStatement, setResearchStatement] = useState([])
+            
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                    query: '*[_type == "statement" && title == "Research Statement"]',
+                    }),
+                })
+                const result = await response.json()
+                console.log(result)
+                setResearchStatement(result)
+                } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchData()
+    }, [])
+
     return (
         <div className="values-container">
             <div className="box">
                 <p className="values-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    { personalStatement[0]?.statement }
                 </p>
             </div>
             <div className="box"></div>
             <div className="box"></div>
             <div className="box">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores nemo illo quod, repellat dolorem nostrum facere at laborum, officiis, magnam impedit est recusandae debitis illum dolore eius vel cum? Nam corrupti soluta modi quae quaerat, tenetur, unde explicabo nulla, voluptatibus perferendis voluptatem laborum? Quaerat voluptatum atque voluptatibus praesentium cumque inventore laborum dolores reiciendis corporis laboriosam, eaque repudiandae hic blanditiis enim tempora possimus laudantium? Eligendi minima vel quis deserunt illo totam provident dolores voluptate. Ut aperiam in soluta suscipit doloribus sapiente neque, architecto voluptas aspernatur ex consectetur. Temporibus totam deleniti nostrum consequuntur soluta consequatur at ea impedit ducimus, aperiam iure ullam dolore adipisci quis facilis odio inventore est sequi ratione ab quod possimus reprehenderit aliquam? Iste sequi culpa architecto, cum nesciunt maxime earum, explicabo doloribus vero odit perferendis.
+                { researchStatement[0]?.statement }
             </div>
         </div>
     )
