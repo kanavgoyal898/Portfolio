@@ -57,39 +57,22 @@ export const profileType = defineType({
                     title: 'Link',
                     fields: [
                         defineField({
+                            name: 'favicon',
+                            type: 'image',
+                            title: 'Font Awesome Icon',
+                        }),                       
+                        defineField({
+                            name: 'title',
+                            type: 'string',
+                            title: 'Title',
+                            validation: (Rule) => Rule.required(),
+                        }),
+                        defineField({
                             name: 'url',
                             type: 'url',
                             title: 'URL',
                             validation: (Rule) => Rule.uri({ scheme: ['http', 'https'] }),
                         }),
-                        defineField({
-                            name: 'lightSvgImage',
-                            type: 'image',
-                            title: 'Light SVG Image',
-                            options: {
-                                accept: '.svg',
-                            },
-                            validation: (Rule) => Rule.required().custom((image) => {
-                              if (image && image.asset && image.asset.extension !== 'svg') {
-                                return 'Only SVG files are allowed';
-                              }
-                              return true;
-                            }),
-                        }),
-                        defineField({
-                            name: 'darkSvgImage',
-                            type: 'image',
-                            title: 'Dark SVG Image',
-                            options: {
-                                accept: '.svg',
-                            },
-                            validation: (Rule) => Rule.required().custom((image) => {
-                                if (image && image.asset && image.asset.extension !== 'svg') {
-                                    return 'Only SVG files are allowed';
-                                }
-                                return true;
-                            }),
-                        }),                          
                     ],
                 },
             ],
