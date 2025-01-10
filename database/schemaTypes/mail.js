@@ -1,9 +1,9 @@
 import { defineField, defineType } from 'sanity'
 
-export const TechnologyType = defineType({
-    name: 'technology',
+export const MailType = defineType({
+    name: 'mail',
     type: 'document',
-    title: 'Technology',
+    title: 'Mail',
     fields: [
         defineField({
             name: 'name',
@@ -16,20 +16,25 @@ export const TechnologyType = defineType({
             title: 'Icon',
         }),
         defineField({
+            name: 'link',
+            type: 'string',
+            title: 'Link',
+        }),
+        defineField({
+            name: 'email',
+            type: 'email',
+            title: 'Mail',
+        }),
+        defineField({
             name: 'description',
             type: 'text',
             title: 'Description',
-        }),
-        defineField({
-            name: 'link',
-            type: 'url',
-            title: 'Link',
         }),
         defineField({
             name: 'priority',
             type: 'number',
             title: 'Priority',
             initialValue: 0,
-        })
+        }),
     ]
 })
