@@ -1,39 +1,14 @@
 import { defineField, defineType } from 'sanity'
 
-export const educationType = defineType({
+export const EducationType = defineType({
     name: 'education',
-    title: 'Education',
     type: 'document',
+    title: 'Education',
     fields: [
-        defineField({
-            name: 'degree',
-            type: 'string',
-            title: 'Degree',
-            validation: (Rule) => Rule.required(),
-            initialValue: 'Bachelors',
-        }),
-        defineField({
-            name: 'degreeAcronym',
-            type: 'string',
-            title: 'Acronym',
-        }),
-        defineField({
-            name: 'major',
-            type: 'string',
-            title: 'Major',
-            initialValue: 'Computer Science & Engineering',
-        }),
         defineField({
             name: 'school',
             type: 'string',
             title: 'School',
-            validation: (Rule) => Rule.required(),
-        }),
-        defineField({
-            name: 'logo',
-            type: 'image',
-            title: 'Logo',
-            options: { hotspot: true, },
         }),
         defineField({
             name: 'location',
@@ -41,18 +16,37 @@ export const educationType = defineType({
             title: 'Location',
         }),
         defineField({
-            name: 'startYear',
-            type: 'number',
-            title: 'Start Year',
-            validation: (Rule) => Rule.min(1900).max(new Date().getFullYear()).integer(),
-            initialValue: new Date().getFullYear(),
+            name: 'icon',
+            type: 'string',
+            title: 'Icon',
+            options: {
+                hotspot: true,
+            },
         }),
         defineField({
-            name: 'endYear',
-            type: 'number',
-            title: 'End Year',
-            validation: (Rule) => Rule.min(1900).max(new Date().getFullYear()).integer(),
-            initialValue: new Date().getFullYear(),
+            name: 'level',
+            type: 'string',
+            title: 'Level',
+        }),
+        defineField({
+            name: 'field',
+            type: 'string',
+            title: 'Field',
+        }),
+        defineField({
+            name: 'start',
+            type: 'date',
+            title: 'Start Date',
+        }),
+        defineField({
+            name: 'end',
+            type: 'date',
+            title: 'End Date',
+        }),
+        defineField({
+            name: 'gpa',
+            type: 'string',
+            title: 'GPA',
         }),
         defineField({
             name: 'description',
@@ -60,26 +54,23 @@ export const educationType = defineType({
             title: 'Description',
         }),
         defineField({
-            name: 'subjects',
+            name: 'courses',
             type: 'array',
-            of: [{ type: 'string' }],
-            title: 'Subjects',
+            title: 'Courses',
+            of: [
+                { type: 'string', },
+            ],
         }),
         defineField({
             name: 'link',
             type: 'url',
             title: 'Link',
-            validation: (Rule) => Rule.uri({
-                scheme: ['http', 'https'],
-            }),
         }),
         defineField({
-            name: 'proof',
-            type: 'url',
-            title: 'Proof',
-            validation: (Rule) => Rule.uri({
-                scheme: ['http', 'https'],
-            }),
+            name: 'priority',
+            type: 'number',
+            title: 'Priority',
+            initialValue: 0,
         }),
-    ],
+    ]
 })

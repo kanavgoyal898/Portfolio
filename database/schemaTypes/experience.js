@@ -1,24 +1,24 @@
 import { defineField, defineType } from 'sanity'
 
-export const ProjectType = defineType({
-    name: 'project',
+export const ExperienceType = defineType({
+    name: 'experience',
     type: 'document',
-    title: 'Project',
+    title: 'Experience',
     fields: [
         defineField({
-            name: 'name',
+            name: 'designation',
             type: 'string',
-            title: 'Project Name',
+            title: 'Designation',
+        }),
+        defineField({
+            name: 'company',
+            type: 'string',
+            title: 'Company Name',
         }),
         defineField({
             name: 'description',
             type: 'text',
-            title: 'Project Description',
-        }),
-        defineField({
-            name: 'date',
-            type: 'datetime',
-            title: 'Date',
+            title: 'Description',
         }),
         defineField({
             name: 'link',
@@ -26,9 +26,19 @@ export const ProjectType = defineType({
             title: 'Link',
         }),
         defineField({
-            name: 'source',
-            type: 'url',
-            title: 'Source Repository',
+            name: 'icon',
+            type: 'string',
+            title: 'Icon',
+        }),
+        defineField({
+            name: 'startDate',
+            type: 'datetime',
+            title: 'Start Date',
+        }),
+        defineField({
+            name: 'endDate',
+            type: 'datetime',
+            title: 'End Date',
         }),
         defineField({
             name: 'attachments',
