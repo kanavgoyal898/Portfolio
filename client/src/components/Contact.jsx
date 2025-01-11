@@ -84,7 +84,7 @@ const Contact = () => {
                 target="_blank"
                 className="link-text"
               >
-                {mail.email}
+                {mail.email} ⟶
               </a>
             ))}
           </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                 target="_blank"
                 className="link-text"
               >
-                {social.name}
+                {social.name} ⟶
               </a>
             ))}
           </div>

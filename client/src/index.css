@@ -13,10 +13,10 @@ html {
   @apply text-black dark:text-white;
 }
 
-
 a {
   /* link styling */
   @apply text-xs;
+  @apply inline-block;
   @apply underline underline-offset-4;
   @apply text-black dark:text-white;
   @apply decoration-accentLight dark:decoration-accentDark;

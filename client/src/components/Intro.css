@@ -4,9 +4,9 @@
 
 .intro-titles {
     @apply mb-4;
-    @apply gap-4;
-    @apply text-sm md:text-base;
     @apply flex flex-row;
+    @apply gap-2 md:gap-4;
+    @apply text-sm md:text-base;
     @apply items-start justify-start;
 }
 

@@ -1,5 +1,5 @@
 .content-container {
-    @apply px-2;                                /* padding start and end */
+    @apply px-4;                                /* padding start and end */
     @apply h-screen;
     @apply md:ml-[25%];                         /* ipad aside section width */
     @apply lg:ml-[33%];                         /* imac aside section width */
@@ -10,23 +10,23 @@
 }
 
 .content-section {
+    @apply min-w-full;
     @apply flex flex-col;
-    @apply min-h-full min-w-full;
+    @apply min-h-fit md:min-h-full;
     @apply items-start justify-start;
     @apply pt-8 md:pt-16 lg:pt-32  pb-0;        /* padding */
 }
 
-.content-section.loaded {
+.content-section .loaded {
     transform: translateY(0);
 }
 
 @media (min-width: 768px) {
     .animate-scroll {
-        animation: scrollToTop 1s ease-out forwards;
+        animation: scrollToTop 0.8s ease-out forwards;
     }
 }
 
-  
 @keyframes scrollToTop {
     0% {
         transform: translateY(100vh);

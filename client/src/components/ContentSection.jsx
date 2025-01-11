@@ -16,7 +16,7 @@ const ContentSection = ({ navigationItems }) => {
     window.addEventListener("resize", handleResize);
 
     if (contentRef.current) {
-      contentRef.current.classList.add("animate-scroll"); // Add animation class
+      contentRef.current.classList.add("animate-scroll");
     }
 
     return () => {

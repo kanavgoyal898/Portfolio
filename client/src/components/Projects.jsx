@@ -57,7 +57,7 @@ const References = () => {
           <div className="reference-description-1">
             {project.description} &nbsp;
             <a href={project.link} target="_blank">
-              Source Code
+              Source Code ⟶
             </a>
           </div>
         </div>

@@ -1,54 +1,54 @@
-import Intro from './components/Intro'
-import Work from './components/Work'
-import Values from './components/Values'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import About from './components/About'
-import Contact from './components/Contact'
-import AsideSection from './components/AsideSection'
-import ContentSection from './components/ContentSection'
-import './App.css'
+import Intro from "./components/Intro";
+import Work from "./components/Work";
+import Values from "./components/Values";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import AsideSection from "./components/AsideSection";
+import ContentSection from "./components/ContentSection";
+import "./App.css";
 
 const sections = [
   {
-    id: 'intro',
-    name: 'Home',
+    id: "intro",
+    name: "Home",
     componentName: <Intro />,
   },
   {
-    id: 'Values',
-    name: 'Values',
+    id: "Values",
+    name: "Values",
     componentName: <Values />,
   },
   {
-    id: 'skills',
-    name: 'Skills',
+    id: "skills",
+    name: "Skills",
     componentName: <Skills />,
   },
   {
-    id: 'projects',
-    name: 'Projects',
+    id: "projects",
+    name: "Projects",
     componentName: <Projects />,
   },
   {
-    id: 'about',
-    name: 'About',
+    id: "about",
+    name: "About",
     componentName: <About />,
   },
   {
-    id: 'contact',
-    name: 'Contact',
+    id: "contact",
+    name: "Contact",
     componentName: <Contact />,
   },
-]
+];
 
 function App() {
   return (
-      <div className="screen">
-        <AsideSection navigationItems={ sections } />
-        <ContentSection navigationItems={ sections } />
-      </div>
-  )
+    <div className="screen">
+      <AsideSection navigationItems={sections} />
+      <ContentSection navigationItems={sections} />
+    </div>
+  );
 }
 
-export default App
+export default App;

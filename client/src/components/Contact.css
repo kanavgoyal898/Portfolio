@@ -47,6 +47,7 @@
 }
 
 .contact-image {
+    @apply mb-8 md:mb-0;
     @apply flex flex-row;
     @apply items-start justify-start;
 }

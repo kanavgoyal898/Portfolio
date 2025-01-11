@@ -2,3 +2,16 @@
   @apply flex flex-row;
   @apply w-full h-full;
 }
+
+.element {
+  overflow: hidden;
+}
+
+.element::-webkit-scrollbar {
+  display: none;
+}
+
+.element {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
