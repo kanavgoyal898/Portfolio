@@ -15,3 +15,7 @@
     @apply items-start justify-start;
     @apply pt-8 md:pt-16 lg:pt-32  pb-0;        /* padding */
 }
+
+.content-section.loaded {
+    transform: translateY(0); /* Final position after loading */
+}

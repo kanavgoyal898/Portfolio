@@ -64,6 +64,91 @@ const articles = [
 ]
 
 const About = () => {
+    const [accomplishments, setAccomplishments] = useState([])
+        
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                    query: '*[_type == "accomplishment"]',
+                    }),
+                })
+                const result = await response.json()
+                console.log(result)
+                setAccomplishments(result)
+                } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchData()
+    }, [])
+
+    const [education, setEducation] = useState([])
+        
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                    query: '*[_type == "education"]',
+                    }),
+                })
+                const result = await response.json()
+                setEducation(result)
+                } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchData()
+    }, [])
+
+    const [ethicalStatement, setEthicalStatement] = useState([])
+            
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                    query: '*[_type == "statement" && title == "Ethical Statement"]',
+                    }),
+                })
+                const result = await response.json()
+                setEthicalStatement(result)
+                } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchData()
+    }, [])
+
+    const [versionStatement, setVersionStatement] = useState([])
+            
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                    query: '*[_type == "statement" && title == "Version Statement"]',
+                    }),
+                })
+                const result = await response.json()
+                    setVersionStatement(result)
+                } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchData()
+    }, [])
+
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
     useEffect(() => {
@@ -81,37 +166,42 @@ const About = () => {
         <div className="about-container">
             <div className="box"></div>
             <div className="box">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores nemo illo quod, repellat dolorem nostrum facere at laborum, officiis, magnam impedit est recusandae debitis illum dolore eius vel cum? Nam corrupti soluta modi quae quaerat, tenetur, unde explicabo nulla, voluptatibus perferendis voluptatem laborum? Quaerat voluptatum atque voluptatibus praesentium cumque inventore laborum dolores reiciendis corporis laboriosam, eaque repudiandae hic blanditiis enim tempora possimus laudantium? Eligendi minima vel quis deserunt illo totam provident dolores voluptate. Ut aperiam in soluta suscipit doloribus sapiente neque, architecto voluptas aspernatur ex consectetur. Temporibus totam deleniti nostrum consequuntur soluta consequatur at ea impedit ducimus, aperiam iure ullam dolore adipisci quis facilis odio inventore est sequi ratione ab quod possimus reprehenderit aliquam? Iste sequi culpa architecto, cum nesciunt maxime earum, explicabo doloribus vero odit perferendis.
+                { ethicalStatement[0]?.statement }
             </div>
             <div className="about-column">
-                <h2 className="about-title">Column Title 1</h2>
-                {awards.map((award, index) => (
+                <h2 className="about-title">Awards & Achievements</h2>
+                {accomplishments.map((accomplishment, index) => (
                     <div key={index} className="about-cell">
-                        <p>{ award.title }</p>
-                        <p className="about-description">{ award.description1 }</p>
-                        <p className="about-description">{ award.description2 }</p>
-                        <a href={ award.link } className="about-description">{ award.linkText }</a>
+                        <p>{ accomplishment.title }</p>
+                        <p className="about-description-1">{ accomplishment.description }</p>
+                        <p className="about-description-2">{ accomplishment.date }</p>
+                        {accomplishment.link && 
+                            <a href={ accomplishment.link } target="_blank" className="about-description-1">{ Link }</a>
+                        }
                     </div>
                 ))}
             </div>
             <div className="about-column">
-                <h2 className="about-title">Column Title 2</h2>
-                {articles.map((article, index) => (
+                <h2 className="about-title">Education</h2>
+                {education.map((grade, index) => (
                     <div key={index} className="about-cell">
-                        <p>{ article.title }</p>
-                        <p className="about-description">{ article.description }</p>
-                        <p className="about-description">{ article.date }</p>
-                        <a href={ article.link } className="about-description">{ article.linkText }</a>
+                        <p>{ grade.field }</p>
+                        <span className="about-description-1">{ grade.title }</span>
+                        <span className="about-description-2">{ grade.school }</span>
+                        <span className="about-description-2">{ grade.startDate } - { grade.endDate }</span>
+                        {grade.link && 
+                            <a href={ grade.link } target="_blank" className="about-description-1">Certificate</a>
+                        }
                     </div>
                 ))}
             </div>
             <div className="box"></div>
             <div className="about-column mt-8">
-                <h2 className="about-title">Credentials</h2>
+                <h2 className="about-title">Colophon</h2>
                 <div className="about-cell">
-                    <p className="about-description">Design & code by Kanav Goyal</p>
-                    <p className="about-description">Credentials</p>
-                    <p className="about-description mt-8">&copy; { currentYear }</p>
+                    <p className="about-description-1">Code by Kanav Goyal</p>
+                    <p className="about-description-1">{ `Version ${versionStatement[0]?.statement}` }</p>
+                    <p className="about-description-2 mt-8">&copy; { currentYear }</p>
                 </div>
             </div>
         </div>

@@ -16,6 +16,7 @@ html {
 
 a {
   /* link styling */
+  @apply text-xs;
   @apply underline underline-offset-4;
   @apply text-black dark:text-white;
   @apply decoration-accentLight dark:decoration-accentDark;

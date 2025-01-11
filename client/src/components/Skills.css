@@ -13,6 +13,7 @@
 }
 
 .background-picture {
+    @apply mb-4;
     @apply rounded-full;
     @apply flex flex-row;
     @apply h-[72px] w-[72px];
