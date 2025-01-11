@@ -17,5 +17,21 @@
 }
 
 .content-section.loaded {
-    transform: translateY(0); /* Final position after loading */
+    transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+    .animate-scroll {
+        animation: scrollToTop 0.36s ease-out forwards;
+    }
+}
+
+  
+@keyframes scrollToTop {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

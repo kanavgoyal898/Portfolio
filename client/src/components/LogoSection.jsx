@@ -1,17 +1,26 @@
-import './LogoSection.css'
+import "./LogoSection.css";
 
-const name = 'Kanav Goyal'
+const name = "Kanav Goyal";
 
 const LogoSection = () => {
   return (
     <button className="logo-section">
       <h1 className="logo">
-        {name.split('').map((letter, index) => (
-          <span key={ index } className={ letter === ' ' ? 'space' : index === 0 ? 'first-letter' : 'letter' } style={{ animationDelay: `${0.1 * (index)**(0.3)}s` }} dangerouslySetInnerHTML={{ __html: letter === ' ' ? '&nbsp;' : letter }}/>
+        {name.split("").map((letter, index) => (
+          <span
+            key={index}
+            className={
+              letter === " " ? "space" : index === 0 ? "first-letter" : "letter"
+            }
+            style={{ animationDelay: `${0.1 * index ** 0.3}s` }}
+            dangerouslySetInnerHTML={{
+              __html: letter === " " ? "&nbsp;" : letter,
+            }}
+          />
         ))}
       </h1>
     </button>
-  )
-}
+  );
+};
 
-export default LogoSection
+export default LogoSection;
