@@ -6,6 +6,7 @@
 }
 
 .reference-container {
+    @apply gap-2;
     @apply ps-4 md:ps-0;
     @apply flex flex-col;
     @apply items-start justify-start;
@@ -13,6 +14,15 @@
 
 .reference-remark {
     @apply text-2xl;
+}
+.reference-description-1 {
+    @apply text-base;
+    @apply text-accentLight dark:text-accentDark;
+}
+
+.reference-description-2 {
+    @apply text-base;
+    @apply text-black dark:text-white;
 }
 
 .reference-details {

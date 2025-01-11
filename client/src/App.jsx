@@ -1,8 +1,8 @@
 import Intro from './components/Intro'
 import Work from './components/Work'
 import Values from './components/Values'
-import Background from './components/Background'
-import References from './components/References'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
 import AsideSection from './components/AsideSection'
@@ -13,23 +13,23 @@ import './App.css'
 const sections = [
   {
     id: 'intro',
-    name: 'Intro',
+    name: 'Home',
     componentName: <Intro />,
   },
   {
-    id: 'values',
+    id: 'Values',
     name: 'Values',
     componentName: <Values />,
   },
   {
-    id: 'background',
-    name: 'Background',
-    componentName: <Background />,
+    id: 'skills',
+    name: 'Skills',
+    componentName: <Skills />,
   },
   {
-    id: 'references',
-    name: 'References',
-    componentName: <References />,
+    id: 'projects',
+    name: 'Projects',
+    componentName: <Projects />,
   },
   {
     id: 'about',

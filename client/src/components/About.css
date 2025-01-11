@@ -20,6 +20,10 @@
     @apply flex flex-col;
 }
 
-.about-description {
+.about-description-1 {
     @apply text-sm;
+}
+.about-description-2 {
+    @apply text-sm;
+    @apply text-accentLight dark:text-accentDark;
 }
