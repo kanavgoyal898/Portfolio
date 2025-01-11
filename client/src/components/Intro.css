@@ -1,5 +1,6 @@
 .intro-section {
     @apply w-full;
+    @apply h-screen;
 }
 
 .intro-titles {
@@ -12,7 +13,7 @@
 
 .intro-description {
     @apply flex flex-row;
-    @apply transition-all duration-0 ease-in-out;
+    @apply transition-all duration-700 ease-in-out;
 }
 
 .intro-description-box {

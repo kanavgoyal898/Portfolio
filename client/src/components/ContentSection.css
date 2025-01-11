@@ -1,3 +1,10 @@
+.content {
+    @apply w-full h-fit;
+    @apply flex flex-col;
+    @apply items-center justify-center;
+    @apply overflow-x-hidden overflow-y-auto;
+}
+
 .content-container {
     @apply px-4;                                /* padding start and end */
     @apply h-screen;
@@ -6,7 +13,31 @@
     @apply md:ps-0 md:pe-4;                     /* ipad padding start and end */
     @apply lg:ps-0 lg:pe-8;                     /* imac padding start and end */
     @apply w-full md:w-[75%] lg:w-[66%];        /* width of content section */
-    @apply overflow-x-hidden overflow-y-auto;
+    @apply overflow-x-clip;
+}
+
+.intro-logo {
+    @apply py-8;
+    @apply w-full;
+    @apply text-4xl;
+    @apply flex flex-col;
+    @apply md:hidden lg:hidden;
+    @apply items-center justify-center;
+}
+
+@keyframes fadeInTranslate {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-logo {
+    animation: fadeInTranslate 0.7s ease-out forwards;
 }
 
 .content-section {
@@ -14,24 +45,24 @@
     @apply flex flex-col;
     @apply min-h-fit md:min-h-full;
     @apply items-start justify-start;
-    @apply pt-8 md:pt-16 lg:pt-32  pb-0;        /* padding */
+    @apply pt-8 md:pt-16 lg:pt-28 pb-0;        /* padding */
 }
 
 .content-section .loaded {
     transform: translateY(0);
+    opacity: 1;
 }
 
-@media (min-width: 768px) {
-    .animate-scroll {
-        animation: scrollToTop 0.8s ease-out forwards;
-    }
+.animate-scroll {
+    animation: scrollToTop 1000ms ease-out forwards;
 }
 
 @keyframes scrollToTop {
-    0% {
-        transform: translateY(100vh);
+    from {
+        transform: translateY(80px);
+        opacity: 0;
     }
-    100% {
+    to {
         transform: translateY(0);
     }
 }

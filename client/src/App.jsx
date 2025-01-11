@@ -16,7 +16,7 @@ const sections = [
     componentName: <Intro />,
   },
   {
-    id: "Values",
+    id: "values",
     name: "Values",
     componentName: <Values />,
   },
@@ -45,8 +45,8 @@ const sections = [
 function App() {
   return (
     <div className="screen">
-      <AsideSection navigationItems={sections} />
-      <ContentSection navigationItems={sections} />
+      <AsideSection navigationItems={ sections } />
+      <ContentSection navigationItems={ sections } />
     </div>
   );
 }

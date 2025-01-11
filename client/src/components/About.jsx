@@ -106,10 +106,10 @@ const About = () => {
       <div className="box"></div>
       <div className="box">{ethicalStatement[0]?.statement}</div>
       <div className="about-column">
-        <h2 className="about-title">Awards & Achievements</h2>
+        <h2 className="about-title"></h2>
         {accomplishments.map((accomplishment, index) => (
           <div key={index} className="about-cell">
-            <p>{accomplishment.title}</p>
+            <p className="about-title">{accomplishment.title}</p>
             <p className="about-description-1">{accomplishment.description}</p>
             <p className="about-description-2">{accomplishment.date}</p>
             {accomplishment.link && (
@@ -125,14 +125,17 @@ const About = () => {
         ))}
       </div>
       <div className="about-column">
-        <h2 className="about-title">Education</h2>
+        <h2 className="about-title"></h2>
         {education.map((grade, index) => (
           <div key={index} className="about-cell">
-            <p>{grade.field}</p>
+            <p className="about-title">{grade.field}</p>
             <span className="about-description-1">{grade.title}</span>
             <span className="about-description-2">{grade.school}</span>
             <span className="about-description-2">
-              {grade.startDate} - {grade.endDate}
+            {grade.gpa}
+            </span>
+            <span className="about-description-3">
+              {grade.startDate} — {grade.endDate}
             </span>
             {grade.link && (
               <a

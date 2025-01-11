@@ -22,8 +22,13 @@
 
 .about-description-1 {
     @apply text-sm;
+    @apply text-black dark:text-white;
 }
 .about-description-2 {
-    @apply text-sm;
+    @apply text-xs;
     @apply text-accentLight dark:text-accentDark;
+}
+.about-description-3 {
+    @apply text-xs;
+    @apply text-black dark:text-white;
 }

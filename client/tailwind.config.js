@@ -16,6 +16,7 @@ export default {
       fontSize: {
         'base': 'var(--font-size-base)',
         '2xl': 'var(--font-size-2xl)',
+        '4xl': 'var(--font-size-4xl)',
         '6xl': 'var(--font-size-6xl)',
     },
     },

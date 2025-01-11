@@ -14,13 +14,7 @@ h1 .first-letter {
 }
 
 h1:hover .letter {
-    animation: fade-in-opacity 0.3s ease-in-out forwards;
-}
-
-@media (max-width: 768px) {
-    h1 .letter {
-        animation: fade-in-opacity 0.5s ease-in-out forwards;
-    }
+    animation: fade-in-opacity 0.7s ease-in-out forwards;
 }
 
 @keyframes fade-in-opacity {

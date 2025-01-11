@@ -1,0 +1,20 @@
+.splash-screen {
+    @apply ps-4;
+    @apply md:ps-8;
+    @apply text-6xl;
+    @apply flex flex-col;
+    @apply translate-y-20;
+    @apply h-screen w-screen;
+    @apply items-start justify-center;
+    @apply transform transition-transform duration-700 ease-out;
+}
+
+.splash-screen.animate {
+    @apply translate-y-0;
+}
+
+.splash-screen.exit {
+    @apply opacity-0;
+    @apply translate-y-20;
+    @apply transition-all duration-700 ease-in-out;
+}

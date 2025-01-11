@@ -58,7 +58,7 @@ const Intro = () => {
               style={{
                 opacity: index === currentIndex ? 1 : 0,
                 pointerEvents: index === currentIndex ? "auto" : "none",
-                transition: "opacity 0.3s ease-in-out",
+                transition: "opacity 0.2s ease-in-out",
               }}
             >
               <p>{slide.description}</p>

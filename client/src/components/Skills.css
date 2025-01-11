@@ -20,6 +20,11 @@
     @apply lg:h-[96px] lg:w-[96px];
     @apply items-center justify-center;
     @apply bg-accentBgLight dark:bg-accentBgDark;
+
+    @apply transition-all;
+    @apply duration-700 ease-in-out;
+    @apply hover:bg-black hover:dark:bg-white;
+    @apply hover:text-white dark:hover:text-black;
 }
 
 .background-name {
