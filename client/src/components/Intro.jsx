@@ -7,7 +7,7 @@ const Intro = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/query", {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/query`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

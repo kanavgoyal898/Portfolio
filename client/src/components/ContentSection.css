@@ -22,7 +22,7 @@
 
 @media (min-width: 768px) {
     .animate-scroll {
-        animation: scrollToTop 0.36s ease-out forwards;
+        animation: scrollToTop 1s ease-out forwards;
     }
 }
 
