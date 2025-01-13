@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.use(cors())
 app.use(express.json())
@@ -14,9 +14,9 @@ app.use(express.json())
 const client = createClient({
   projectId: process.env.SANITY_API_ID,
   dataset: process.env.SANITY_API_DATASET || 'production',
-  apiVersion: '2023-01-01',
+  apiVersion: '2025-01-01',
   token: process.env.SANITY_API_TOKEN,
-  useCdn: false,
+  useCdn: true,
 })
 
 app.get('/', (req, res) => {
