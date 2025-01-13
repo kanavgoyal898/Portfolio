@@ -5,6 +5,9 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 dotenv.config()
 
+import job from './cron.js'
+job.start();
+
 const app = express()
 const port = process.env.PORT || 3000
 
