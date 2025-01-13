@@ -116,9 +116,8 @@ const About = () => {
               <a
                 href={accomplishment.link}
                 target="_blank"
-                className="about-description-1"
               >
-                {Link}
+                View Details
               </a>
             )}
           </div>
@@ -141,9 +140,8 @@ const About = () => {
               <a
                 href={grade.link}
                 target="_blank"
-                className="about-description-1"
               >
-                Certificate
+                View Details
               </a>
             )}
           </div>
