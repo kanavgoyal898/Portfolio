@@ -1,5 +1,5 @@
 import Intro from "./components/Intro";
-import Work from "./components/Work";
+import Gallery from "./components/Gallery";
 import Values from "./components/Values";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -29,6 +29,11 @@ const sections = [
     id: "projects",
     name: "Projects",
     componentName: <Projects />,
+  },
+  {
+    id: "gallery",
+    name: "Gallery",
+    componentName: <Gallery />,
   },
   {
     id: "about",

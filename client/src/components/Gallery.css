@@ -1,0 +1,13 @@
+.work {
+    @apply w-fit;
+    @apply h-fit;
+}
+
+.work-gallery {
+    @apply gap-[4px];
+    @apply columns-3;
+}
+
+.work-picture {
+    @apply my-[4px];
+}

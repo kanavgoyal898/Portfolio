@@ -36,6 +36,23 @@ app.post('/query', async (req, res) => {
   }
 })
 
+app.get("/pictures", async (req, res) => {
+  try {
+    const pictures = await client.fetch(`
+      *[_type == "picture"] {
+        "id": _id,
+        "name": name,
+        "priority": priority,
+        "url": media.asset->url
+      }
+    `);
+    res.status(200).json(pictures)
+  } catch (error) {
+    console.error("Error fetching images from Sanity:", error)
+    res.status(500).json({ error: "Failed to fetch images" })
+  }
+})
+
 app.listen(port, () => {
   console.log(`Sanity API Server is running on port ${port}`)
 })
