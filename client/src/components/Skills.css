@@ -22,7 +22,7 @@
     @apply bg-accentBgLight dark:bg-accentBgDark;
 
     @apply transition-all;
-    @apply duration-700 ease-in-out;
+    @apply duration-500 ease-in-out;
     @apply hover:bg-black hover:dark:bg-white;
     @apply hover:text-white dark:hover:text-black;
 }
